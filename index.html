@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.js"></script>
+	
+	
+    <script src="ball.js" ></script>
+	<script src="particle.js" ></script>
+    <script src="sketch.js" defer="defer"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+  </head>
+  <body>
+  <div id="curtain" class="curtainClass"></div>
+  <div class="header"></div>
+	<div class="outsideWrapper">
+		<div class="insideWrapper" id="wrappHolder">
+			<img id="realBackground" src="img/adal.png" class="coveredImage">
+			<img id="drawBackground" src="img/teikn2.png" class="coveredImage">
+		</div>
+	</div>
+	<div>
+	<div class="actionHolder">
+	<div class="switch">
+		<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+		<label for="cmn-toggle-1"></label>
+		
+	</div>
+	<div class="switch">
+		<input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox" >
+		<label for="cmn-toggle-2"></label>
+	</div>
+	<div class="slideHolder">
+		<p class="inlineSlider">-</p><input type="range" min="0.001" max="100" value="50" class="slider" id="slider1" oninput="handleSliderVal(this.value)" ><p class="inlineSlider">+</p>
+	</div>
+  </div>
+  </body>
+</html>
+
