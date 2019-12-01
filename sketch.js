@@ -92,7 +92,8 @@ function setup() {
 	}
 	
 	z_off = 0;
-	drawState = localStorage["__CURR_STATE"] === null ? "_ACTIVE" : localStorage["__CURR_STATE"];
+	drawState = localStorage["__CURR_STATE"] == null ? "_ACTIVE" : localStorage["__CURR_STATE"];
+	localStorage["__CURR_STATE"] = drawState;
 	$("#cmn-toggle-1")[0].checked = drawState ==  "_PASSIVE";
 	dirIndex = 2;
 	
