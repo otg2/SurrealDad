@@ -4,7 +4,7 @@
 	  overflow-y:hidden;
   }
   .header{
-	  margin:100px;
+	  margin:4%;
   }
   .curtainClass
   {
@@ -17,8 +17,8 @@
   }
   .outsideWrapper {
 	  margin:auto;
-      width:1200px;
-      height:682px;
+      width: 63%;
+      height: 71%;
 	  cursor:none;
   }
   .insideWrapper {
@@ -51,7 +51,6 @@
   }
   .cmn-toggle {
     position: absolute;
-    margin-left: -9999px;
     visibility: hidden;
   }
   .cmn-toggle + label {
@@ -82,27 +81,7 @@
     border-radius: 60px;
     transition: background 0.5s ease;
   }
-  #cmn-toggle-2 + label:before
-  {
-	background-image: url("img/display_real.PNG");
-  }
-  #cmn-toggle-2:checked + label:before
-  {
-	  
-	background-image: url("img/display_color.PNG");
-  }
-  #cmn-toggle-1 + label:before
-  {
-	background-image: url("img//mouse.png");
-		background-repeat-x: no-repeat;
-		background-position:right;
-  }
-  #cmn-toggle-1:checked + label:before
-  {
-	background-image: url("img/auton.png");
-	background-repeat-x: no-repeat;
-	background-position:left;
-  }
+  
   input.cmn-toggle-round + label:after {
     width: 65px;
     background-color: #fff;
@@ -110,6 +89,35 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: margin 0.4s ease;
   }
+  
+  #cmn-toggle-2 + label:before
+  {
+	background-image: url("img/display_real.PNG");
+	background-repeat-y: no-repeat;
+  }
+  
+  #cmn-toggle-2:checked + label:before
+  {
+	background-repeat-y: no-repeat;  
+	background-image: url("img/display_color.PNG");
+  }
+  
+  #cmn-toggle-1 + label:before
+  {
+	background-image: url("img/mouse.png");
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-position:right;
+  }
+  #cmn-toggle-1:checked + label:before
+  {
+	background-image: url("img/auton.png");
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-position:left;
+  }
+  
+  
   input.cmn-toggle-round:checked + label:before {
 
   }
@@ -123,8 +131,8 @@
 }
   .slider {
     -webkit-appearance: none;
-    width: 10%;
-    height: 15px;
+    width: 15%;
+    height: 2%;
     border-radius: 5px;
     background: #d3d3d3;
     outline: none;
@@ -153,4 +161,21 @@
 	display:inline-block;
 	color:white;
 	font-size:larger;
+	font-size:2em;
+	margin: 0% 1%;
+}
+
+
+@media (min-width: 400px) and (orientation:portrait) {
+
+	.header{
+		  margin:40%;
+	  }
+   .outsideWrapper {
+	  margin:auto;
+      width: 850px;
+      height: 550px;
+	  cursor:none;
+  }
+
 }

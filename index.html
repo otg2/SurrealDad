@@ -7,7 +7,6 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.js"></script>
-	
 	<script src="particle.js" ></script>
     <script src="sketch.js" defer="defer"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -22,8 +21,10 @@
 			<img id="drawBackground" src="img/teikn2.png" class="coveredImage">
 		</div>
 	</div>
-	<div>
 	<div class="actionHolder">
+	<div class="slideHolder">
+		<p class="inlineSlider">- </p><input type="range" min="0.001" max="100" value="50" class="slider" id="slider1" oninput="handleSliderVal(this.value)" ><p class="inlineSlider"> +</p>
+	</div>
 	<div class="switch">
 		<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
 		<label for="cmn-toggle-1"></label>
@@ -33,10 +34,7 @@
 		<input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox" >
 		<label for="cmn-toggle-2"></label>
 	</div>
-	<div class="slideHolder">
-		<p class="inlineSlider">-</p><input type="range" min="0.001" max="100" value="50" class="slider" id="slider1" oninput="handleSliderVal(this.value)" ><p class="inlineSlider">+</p>
-	</div>
-  </div>
+	
   </body>
 </html>
 
